@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>API Examples</title>
+
+</head>
+<body>
+    <!--Location 1--> 
+
+    <h2> JavaScript Geolocation</h2>
+
+    <p>Click the button to get your coordinates.</p>
+    <button onclick="getLocation()">Try It</button>
+    <p id="demo1"></p>
+
+ <!--js validation 1--> 
+
+    <h2>JavaScript Validation</h2>
+
+    <p>Enter a number and click OK:</p>
+    
+    <input id="id1" type="number" min="100" max="300" required>
+    <button onclick="myValidation()">OK</button>
+    
+    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+    
+    <p id="demo2"></p>
+
+ <!--js overflow validation 1--> 
+
+    <h2>JavaScript Validation</h2>
+
+    <p>Enter a number and click OK:</p>
+    
+    <input id="id2" type="number" max="100">
+    <button onclick="myValid()">OK</button>
+    
+    <p>If the number is greater than 100 (the input's max attribute), an error message will be displayed.</p>
+    
+    <p id="demo3"></p>
+
+ <!--JavaScript Underflow Validation--> 
+ <h2>JavaScript Validation</h2>
+
+ <p>Enter a number and click OK:</p>
+ 
+ <input id="id3" type="number" min="100">
+ <button onclick="myUnder()">OK</button>
+ 
+ <p>If the number is less than 100 (the input's min attribute), an error message will be displayed.</p>
+ 
+ <p id="demo4"></p>
+
+ <!--JavaScript History back() Method--> 
+ <button onclick="myBack()">Go Back</button>
+    <script src="app.js"></script>
+
+ <!--JavaScript History jumps back() Method--> 
+ <button onclick="myJump()">Go Back 2 Pages</button>
+
+
+ <!--JavaScript Web workere--> 
+ <h2>JavaScript Web Workers API</h2>
+ <p>Count numbers: <output id="result"></output></p>
+ <button onclick="startWorker()">Start Worker</button> 
+ <button onclick="stopWorker()">Stop Worker</button>
+
+</body>
+</html>
